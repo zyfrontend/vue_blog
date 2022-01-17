@@ -290,3 +290,36 @@ export const convertImageToCanvas = (image) => {
 
   return canvas;
 };
+
+// 随机标签颜色
+export const colors = [
+  "#424242",
+  "#37474f",
+  "#64dd17",
+  "#795548",
+  "#f57c00",
+  "#00e676",
+  "#004d40",
+  "#dce775",
+  "#18ffff",
+  "#03a9f4",
+  "#bf360c",
+  "#6a1b9a",
+  "#aa00ff",
+  "#673ab7",
+  "#4db6ac",
+];
+
+export const randomNum = (m, n) => {
+  return Math.floor(Math.random() * (m - n) + n);
+};
+
+export const randomColor = () => {
+  return colors[randomNum(1, 15)];
+};
+
+// github 图标
+export const Icon = {
+  github:
+    "https://zyfullstack-images.oss-cn-shanghai.aliyuncs.com/img/202201111347823.png",
+};
